@@ -115,5 +115,77 @@ Per poder instal·lar Moodle haurem d'anar amb unaltre ordinador i despres anem 
 ```
 wget <link de l'arxiu que volem descarregar>
 ```
+![Selecció_018](https://user-images.githubusercontent.com/114423020/204159554-9c6328f9-5f21-46e3-b755-c59a1960a8ed.png)
+
 
 Per descomprimir-lo i col·locar-lo al directori **/var/www/html** i fer-lo accessible via web executem la següent ordre:
+
+```
+sudo unzip <link descarregar> -d /var/www/html/
+```
+![Selecció_019](https://user-images.githubusercontent.com/114423020/204159562-f7979cd0-56cc-4fd5-baf6-76a5a0204ae1.png)
+
+
+Si voleu moure a un altre directori cal canviar el paràmetre després de -d
+
+**IMPORTANT:** El directori creat ha de poder ser escrit pel servidor web, haurem de canviar el propietari del mateix a **www-data**, per exemple així:
+
+```
+sudo chown www-data:www-data /var/www/html/moodle
+```
+![Selecció_020](https://user-images.githubusercontent.com/114423020/204159764-7010cedf-0bff-495f-a8e9-a7e0cae7bca8.png)
+
+
+### Crear el directori de fitxers
+
+Moodle utilitza un directori per desar fitxers dels usuaris, és recomanable que aquest directori no estigui al mateix directori que el servidor web, però ha de ser un directori amb accés per part del navegador.
+
+Jo, per exemple, crearem el directori **moodledata** en **home**.
+
+```
+cd /home
+sudo mkdir moodledata
+sudo chown www-data:www-data moodledata/
+```
+![Selecció_021](https://user-images.githubusercontent.com/114423020/204159761-f2442543-49b6-4d29-be0f-019547dacb42.png)
+
+
+### Configurar la base de dades
+
+Ara haurem de crear una base de dades per al Moodle, per accedir a la base de dades MariaDB haurem d'introduir la seguent comanda:
+
+```
+sudo mysql -u root -p
+```
+![Selecció_026](https://user-images.githubusercontent.com/114423020/204159812-c97dc472-4a44-49cc-bba5-59cfc3dd4f80.png)
+
+
+Creem un usuari per a moodle, per exemple moodlemanager:
+
+```
+CREATE USER 'moodlemanager'@'localhost' IDENTIFIED BY 'managermoodle';
+```
+![Selecció_027](https://user-images.githubusercontent.com/114423020/204159818-61058d8e-57a4-496e-b439-125ad1b7704a.png)
+
+I crearem la base de dades per a l'ús de moodle:
+
+```
+CREATE DATABASE moodle;
+```
+![Selecció_028](https://user-images.githubusercontent.com/114423020/204159837-5bb2b7b0-1986-47f5-9087-8565a69c0b78.png)
+
+Finalment, concedeix control sobre la base de dades moodle a l'usuari moodlemanager que hem creat abans:
+
+```
+GRANT ALL PRIVILEGES ON moodle.* TO 'moodlemanager'@'localhost';
+FLUSH PRIVILEGES;
+```
+![Selecció_029](https://user-images.githubusercontent.com/114423020/204159851-f40fa3e8-2b18-444e-b86c-0ae13aae1caa.png)
+
+Amb això ja hem acabat la configuració de la base de dades
+
+Finalment per accedir dins del moodle amb el navegador haurem dintroduir la IP de la nostra màquina i fiquem moodle. I ens hauria d'apareixer el següent:
+![Selecció_030](https://user-images.githubusercontent.com/114423020/204159950-76a1f279-8402-4669-b23c-e6053e307e9b.png)
+
+
+
