@@ -206,6 +206,81 @@ Per descarregar les dos extensiona haurem de fer les següent comandes:
 ```
 ![Selecció_006](https://user-images.githubusercontent.com/114423020/205708955-ae1fe20e-0f2e-4b4e-85d0-a4cbc406642c.png)
 
+Una vegada fet aixo actualitzem el apache amb la comanda 
+
+```
+sudo service apache2 reload
+```
+
+Seguidament ens apareixera una pantalla on haurem de confirma la ruta de la pàgina web, per defecte esta a **"/var/www/moodledata"** pero ho haurem de canviar a **"/home/moodledata"**.
+
+**Antes:**
+![Selecció_009](https://user-images.githubusercontent.com/114423020/205710064-67e78ab8-b4ce-455f-af7b-c01628cea80e.png)
+
+**Després:**
+![Selecció_010](https://user-images.githubusercontent.com/114423020/205710100-04129403-8237-4b2e-a0e2-b6d912923863.png)
+
+Després haurem de selecionar el nostre controlador de base de datos.
+![Selecció_011](https://user-images.githubusercontent.com/114423020/205710245-41560871-288d-40db-9f6d-442476e741ab.png)
+
+Ens apareixera una pantalla dels ajustes de base de dades on haurem de inserir el nom d'usuari i la contrasenya que hem creat anteriorment amb la base de dades.
+![Selecció_012](https://user-images.githubusercontent.com/114423020/205710535-36dc8ffa-7ebd-47ec-8622-9c4d4a7a1d14.png)
+
+Ara ens apareixera un error on ens indicara instal·lar 2 extensions més, que són **"String"** i **"xml"**.
+![Selecció_014](https://user-images.githubusercontent.com/114423020/205710904-35190947-8b37-4c19-a580-d749d388d3fb.png)
+
+Per instal·lar les extensions ho haurem de instal·lar amb aquestes comandes:
+
+```
+sudo apt install php8.0-xml
+```
+![Selecció_015](https://user-images.githubusercontent.com/114423020/205711167-508c57a6-c0df-44b4-8fe0-7ffdec928e89.png)
+
+```
+sudo apt install php8.0-mbstring
+```
+![Selecció_016](https://user-images.githubusercontent.com/114423020/205711407-4ad34f64-97fd-4d40-a256-eb5b90d4db58.png)
+
+I tornem a actualitzar apache2
+![Selecció_017](https://user-images.githubusercontent.com/114423020/205711538-bf2bd77c-6572-40c3-b891-05b0f8127c4e.png)
+
+Ens apareixera una pantalla on ens ensenyar els terminos i condiciones, seguidament cliquem continuar.
+![Selecció_019](https://user-images.githubusercontent.com/114423020/205711837-5ddba2a8-71f1-4bc8-a36e-8fb011c7dd68.png)
+
+Una vegada configurat el moodle ens apareixera una pantalla amb les coses que ens falten per fer la instal·lació de moodle. Primer que tot ens apareixera les extensions que hens faltens:
+
+![Selecció_029](https://user-images.githubusercontent.com/114423020/205712196-34fef141-8b7a-4545-90f8-af45c079fa1e.png)
+
+I baix de tot ens apareixera un error de la configuracio de php.
+![Selecció_030](https://user-images.githubusercontent.com/114423020/205712877-2ceed822-0cf2-4309-8eae-f87f45ed42d9.png)
+
+Per resoldre aquests problemes haurem de fer el següent
+
+**Instal·lar extensions necessaies**
+![Selecció_031](https://user-images.githubusercontent.com/114423020/205713062-54f2c780-3c7d-4a8f-a1c1-82afb12c2cc5.png)
+
+**Configuració de php**
+Haurem d'anar a l'arxiu php.ini, per entra dins d'aquest arxiu haurem d'estar dins de la carpeta **apache2** i després haurem d'inserir la comanda:
+
+```
+sudo nano php.ini
+```
+![Selecció_021](https://user-images.githubusercontent.com/114423020/205713748-295fb26c-4802-4197-a33a-cb419fc3b60f.png)
+
+I una vegada dins hem de clica **Windows+w** i esciure **max_input_vars =**, per pretederminat ficara **1000** pero nosaltres haurem de fica **5000** i descomentar la línia.
+![Selecció_032](https://user-images.githubusercontent.com/114423020/205714119-43228a32-89fd-4ad8-919e-ca2a0117a0d4.png)
+
+Finalment una vegada instal·lr tot ens hauria d'apareixer que el nostre entorn compleix els requisits mínims i podem clica **continuar**.
+![Selecció_033](https://user-images.githubusercontent.com/114423020/205714431-1a9d79d0-6e7c-4702-bd7e-cc15dbef0275.png)
+
+Ara inserim les dades generals per el moodle amb l'usuari i contrasenyar incluit.
+![Selecció_034](https://user-images.githubusercontent.com/114423020/205714627-070ef76d-7a2a-427e-b2f1-2a79633f9301.png)
+
+I també configurem la pàgina inicial.
+![Selecció_035](https://user-images.githubusercontent.com/114423020/205714751-bfcc2ecc-1999-4a21-b048-b4606d97ff1a.png)
+
+Un cop fet tot el anterior ja esta tot acabat, ens hauria d'apareixer la pàgina principal de moodle.
+![image](https://user-images.githubusercontent.com/114423020/205715047-f3d382d8-bd46-4d4e-b360-a58a7ca42bc8.png)
 
 
 
