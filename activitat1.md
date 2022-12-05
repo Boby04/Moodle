@@ -186,6 +186,28 @@ Amb això ja hem acabat la configuració de la base de dades
 
 Finalment per accedir dins del moodle amb el navegador haurem dintroduir la IP de la nostra màquina i fiquem moodle. I ens hauria d'apareixer el següent:
 ![Selecció_030](https://user-images.githubusercontent.com/114423020/204159950-76a1f279-8402-4669-b23c-e6053e307e9b.png)
+En aquesta pàgina configurem la instalació i direm amb quina llengua voldrem instalar-ho.
+
+Segurament després d'instal·lar-ho ens apareixera aquesta pantalla on ens dira que haurem d'instal·lar dos extensions per continuar.
+![Selecció_008](https://user-images.githubusercontent.com/114423020/205707725-545420f9-18a5-4387-b73c-b2d8eea527e7.png)
+
+Per descarregar les dos extensiona haurem de fer les següent comandes:
+
+```
+1. sudo apt search php | grep curl
+2. sudo apt install php8.0-curl (descarreguem la versio que tenim nosaltres de php)
+```
+![Selecció_005](https://user-images.githubusercontent.com/114423020/205708895-027506bf-66c2-46b8-bff6-34de93d3d9a8.png)
+
+
+```
+1. sudo apt search php | grep zip
+2. sudo apt install php8.0-zip(descarreguem la versio que tenim nosaltres de php)
+```
+![Selecció_006](https://user-images.githubusercontent.com/114423020/205708955-ae1fe20e-0f2e-4b4e-85d0-a4cbc406642c.png)
+
+
+
 
 
 
