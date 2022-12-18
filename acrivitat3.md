@@ -47,14 +47,38 @@ Per fer aixó haurem d'anar a l'apartat de **"Usuaris"** i després al subaparta
 
 
 Un cop fet aixó haurem de fer un arxiu calc amb tots els usuaris que volem posar amb totes les dades necessaries i guardar-lo amb el format csv.
+
 ![image](https://user-images.githubusercontent.com/114423020/208316084-785295e4-d1cf-459c-82d9-6e6863343cdf.png)
 
 Guardat podrem pujar el fitxer i posar al separador **"CSV"** que ho separe per **","**.
 ![image](https://user-images.githubusercontent.com/114423020/208316139-9f4d79b1-47d5-47ae-ac1a-cfd5e8060863.png)
 
-undefined
+Després ens apareixera més opcions que podem modificar a l'hora de fer els usuaris. En el meu cas no he fet res mes.
+![image](https://user-images.githubusercontent.com/114423020/208316228-bc3aa753-7dd8-478f-83c8-74a0747a4b4f.png)
+
+I per últim ens apareixera una pantalla amb el resultat final de com a quedat.
+![image](https://user-images.githubusercontent.com/114423020/208316259-89a883a3-e26a-4737-a45d-f487fe54160d.png)
+
+Per comprova que tot esta correcte hem d'anar a l'apartat d'usuaris i ens hauria d'apareixer els usuaris que hem creat.
+![image](https://user-images.githubusercontent.com/114423020/208316297-d031c584-ef1b-459a-afd2-16188ae4d5fc.png)
+
+
 6. Fes que Cognom_1_profe sigui professor dels cursos: MP04, MP12, MP08 i MP07.
+![image](https://user-images.githubusercontent.com/114423020/208318212-91b34206-d50e-42cc-8871-586e955a9329.png)
+
+![image](https://user-images.githubusercontent.com/114423020/208318215-ae84347f-c37f-4bcd-a149-db5dd7679914.png)
+
+![image](https://user-images.githubusercontent.com/114423020/208318218-59d19c18-c8a5-497e-9b76-08c415b0e513.png)
+
+![image](https://user-images.githubusercontent.com/114423020/208318229-d71f8532-ea7a-42f4-a190-1d2008a8cf48.png)
+
 7. Fes que Cognom_2_profe sigui professor dels cursos: MP10, MP06 i TUTORIA.
+![image](https://user-images.githubusercontent.com/114423020/208318340-8e9938e7-60c7-449c-b063-bcf751676435.png)
+
+![image](https://user-images.githubusercontent.com/114423020/208318348-8b7de26d-1ddd-4b2b-b96a-89d9c3fca778.png)
+
+![image](https://user-images.githubusercontent.com/114423020/208318350-3640cc55-09ff-49fe-bd51-418f0dbae6af.png)
+
 8. Fes que Cognom_3_profe sigui professor de tots els cursos.
 9. Afegeix a tots els alumnes a tots els cursos (els 5).
 10. Mostra l'apartat Participants de cada curs.
