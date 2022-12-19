@@ -91,3 +91,5 @@ Per comprova que tot esta correcte hem d'anar a l'apartat d'usuaris i ens hauria
 14. Perquè serveixen?
 **Els grups ens permeten dirigir activitats a un conjunt de grups.**
 15. Fes dos grups de Aplicacions Web, el A i el B. Mostra els dos grups.
+![image](https://user-images.githubusercontent.com/114423020/208449754-4a512156-ca7f-45b2-acdb-b7fee4665bb8.png)
+
