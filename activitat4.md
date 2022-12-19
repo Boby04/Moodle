@@ -93,8 +93,34 @@ I així haurem de fer a tots els usuaris que han entregat la tasca
 ![image](https://user-images.githubusercontent.com/110727546/207085138-c3cbcb81-edee-45a1-8b11-daf20093e56d.png)
 
 
-- Bloca una adreça IP d'un company per a que no pugui accedir al moodle i mostra-ho.
+- **Bloca una adreça IP d'un company per a que no pugui accedir al moodle i mostra-ho.**
+
+Haurem d'anar a l'apartat de **"Administación del sitio"** i després ens haurem d'anar al subapartat **"Bloqueador de IP"**.
+![image](https://user-images.githubusercontent.com/114423020/208492234-332feda2-53de-47e9-aadb-c505ce46ae05.png)
+
+Una vegada fet aixo ens apareixera una pantall amb les IP's permitides i bloquejades, a l'apartat de les IP's bloquejades he bloquejat la IP de un company meu.
+![image](https://user-images.githubusercontent.com/114423020/208492453-bc1edf7b-4b88-47d8-9b8a-58cc73646754.png)
+
+Per comprovar-ho el meu company ha de accedir al meu moodle i veure si te acces.
+![jordi](https://user-images.githubusercontent.com/114423020/208492530-dc3d3428-acc9-40a1-b2c5-819ba46cda3d.png)
+
+
 - Canvia els paràmetres de les contrasenyes d'usuari per a que les contrasenyes:
   - Tinguin mínim 10 caràcters.
   - Tinguin 2 dígits.
   - Tinguin 3 maiúscules.
+
+![image](https://user-images.githubusercontent.com/114423020/208493168-041f0f80-f9b1-4f86-b5ee-c3f3463dddcf.png)
+
+
+# Plugins:
+
+- Instal·la 2 [plugins](https://moodle.org/plugins/) de Moodle i explica què fan.
+
+El primer plugin que he instal·lat *"Basic course search"**.
+![image](https://user-images.githubusercontent.com/114423020/208495289-e6984896-7c62-4c91-9d34-6fa47b37e8b7.png)
+
+Aquest plugin simplement display Moodle's course search form in a block. Amb advent de global search, we wanted to give admins a quick way of searching for course titles or codes without having to wade through course content.
+
+El segon plugin que he instal·lat 
+
