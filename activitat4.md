@@ -117,10 +117,21 @@ Per comprovar-ho el meu company ha de accedir al meu moodle i veure si te acces.
 
 - Instal·la 2 [plugins](https://moodle.org/plugins/) de Moodle i explica què fan.
 
-El primer plugin que he instal·lat *"Basic course search"**.
+El primer plugin que he instal·lat és diu **"Basic course search"**.
 ![image](https://user-images.githubusercontent.com/114423020/208495289-e6984896-7c62-4c91-9d34-6fa47b37e8b7.png)
 
 Aquest plugin simplement display Moodle's course search form in a block. Amb advent de global search, we wanted to give admins a quick way of searching for course titles or codes without having to wade through course content.
 
-El segon plugin que he instal·lat 
+El segon plugin que he instal·lat és diu **"Quiz Analytics"**.
+![image](https://user-images.githubusercontent.com/114423020/208495591-4b5880f1-d351-4d9a-8879-771d7136072e.png)
 
+Aquest plugin proveeix els usuaris amb el most important part d'exam/quiz, i.e, analytics. Every attempt tots els usuaris fan que potser scrutinised i relevant data seran portats via visualment appealing graphs.
+
+# Personalització del tauler d'usuaris:
+
+![image](https://user-images.githubusercontent.com/110727546/207088651-6131a2b1-20c7-4a9f-b50a-317295ce70f1.png)
+
+Canvia el tauler d'usuaris.
+
+- Afegeix a dalt de tot "Cursos visitats recentment".
+- Afegeix a baix de tot "Usuaris en línia".
