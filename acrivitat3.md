@@ -83,7 +83,11 @@ Per comprova que tot esta correcte hem d'anar a l'apartat d'usuaris i ens hauria
 9. Afegeix a tots els alumnes a tots els cursos (els 5).
 10. Mostra l'apartat Participants de cada curs.
 11. Què són les Cohorts? 
+**Les cohorts són grups a tota l'amplada del lloc o de tota una categoria de cursos.**
 12. Perquè serveixen?
+**El propòsit de les cohorts és permetre a tots els membres de la cohort ser inscrits (matriculats) fàcilment en un curs.**
 13. Què són els grups?
+**Un grup és un conjunt de participants i un agrupament és un conjunt de grups**
 14. Perquè serveixen?
+**Els grups ens permeten dirigir activitats a un conjunt de grups.**
 15. Fes dos grups de Aplicacions Web, el A i el B. Mostra els dos grups.
